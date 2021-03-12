@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+/* for mobile */
+#preview-gridwrapper{
+    display: grid;
+    height: 100vh;
+    width: 100vw;
+    grid-template-columns: 6fr 1fr;
+    grid-template-rows:64px 0.5fr 360px 0.5fr 192px ;
+    grid-template-areas: 
+    
+    "he na"
+    ".  . "
+    "ma ma"
+    ".  . "
+    "ar ar"
+    
+    
+    ;
+}
+
+    
+
+header{
+    grid-area: he;
+    background: brown;
+}
+
+nav{
+    grid-area: na;
+    background: blueviolet;
+}
+
+main{
+    grid-area: ma;
+    background: coral;
+}
+
+article{
+    grid-area: ar;
+    background: greenyellow;
+}
+
+footer{
+    grid-area: fo;
+    background: khaki;
+}
