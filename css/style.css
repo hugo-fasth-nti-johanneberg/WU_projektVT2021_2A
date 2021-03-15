@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 
@@ -33,9 +34,12 @@ header{
 nav{
     grid-area: na;
     background: blueviolet;
+    display: flex;
+    justify-content: flex-end;
+    height: 20vh;
+    align-items: center;
 }
-
-main{
+main {
     grid-area: ma;
     background: coral;
 }
@@ -48,4 +52,25 @@ article{
 footer{
     grid-area: fo;
     background: khaki;
+}
+
+/* Laget CSS */
+
+#laget-gridwrapper{
+    display: grid;
+    width: 100vw;
+    height: 300vh;
+    grid-template-rows: ;
+    grid-template-columns: ;
+    grid-template-areas: 
+    
+    
+    
+    
+    
+    ;
+}
+
+#main-laget{
+
 }
