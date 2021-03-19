@@ -60,11 +60,14 @@ footer{
     display: grid;
     width: 100vw;
     height: 300vh;
-    grid-template-rows: ;
-    grid-template-columns: ;
+    grid-template-rows: 64px 270px 1fr;
+    grid-template-columns:6fr 1fr ;
     grid-template-areas: 
     
-    
+    "he na"
+    "ar ar"
+    "ml ml"
+
     
     
     
@@ -72,5 +75,20 @@ footer{
 }
 
 #main-laget{
+    grid-area: ml;
+    background: blue;
 
+}
+@media screen and (min-width: 501px){
+    #laget-gridwrapper{
+    grid-template-rows: 64px 64px 270px 1fr;
+    grid-template-columns:6fr 1fr ;
+    grid-template-areas: 
+    
+    "he he"
+    "na na"
+    "ar ar"
+    "ml ml"
+    ;
+}
 }
