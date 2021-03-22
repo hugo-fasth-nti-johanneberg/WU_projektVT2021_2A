@@ -11,33 +11,56 @@
     height: 100vh;
     width: 100vw;
     grid-template-columns: 6fr 1fr;
-    grid-template-rows:64px 0.5fr 360px 0.5fr 192px ;
+    grid-template-rows:64px 360px 192px ;
     grid-template-areas: 
-    
     "he na"
-    ".  . "
     "ma ma"
-    ".  . "
     "ar ar"
-    
-    
     ;
 }
 
-    
-
+@media screen and (min-width: 501px){
+#preview-gridwrapper{
+    display: grid;
+    height: 100vh;
+    width: 100vw;
+    grid-template-columns: 1fr;
+    grid-template-rows:64px 64px 360px 192px ;
+    grid-template-areas: 
+    "he he"
+    "na na"
+    "ma ma"
+    "ar ar"
+    ;
+}
+}
 header{
     grid-area: he;
     background: brown;
 }
+.navigation-links{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: larger;
+    list-style-type:none;
+    text-decoration: none;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
 
 nav{
     grid-area: na;
     background: blueviolet;
     display: flex;
-    justify-content: flex-end;
-    height: 20vh;
     align-items: center;
+    justify-content: center;
+    
 }
 main {
     grid-area: ma;
@@ -54,6 +77,8 @@ footer{
     background: khaki;
 }
 
+.empty
+
 /* Laget CSS */
 
 #laget-gridwrapper{
@@ -63,22 +88,13 @@ footer{
     grid-template-rows: 64px 270px 1fr;
     grid-template-columns:6fr 1fr ;
     grid-template-areas: 
-    
     "he na"
     "ar ar"
     "ml ml"
-
-    
-    
-    
     ;
 }
 
-#main-laget{
-    grid-area: ml;
-    background: blue;
 
-}
 @media screen and (min-width: 501px){
     #laget-gridwrapper{
     grid-template-rows: 64px 64px 270px 1fr;
@@ -91,4 +107,91 @@ footer{
     "ml ml"
     ;
 }
+}
+
+#main-laget-wrapper{
+    grid-area: ml;
+    background: blue;
+    display: grid;
+    grid-template-rows: repeat(5, 1fr) ;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "p1 p2"
+    "p3 p4"
+    "p5 . "
+    ;
+}
+
+@media screen and (max-width: 501px){
+    #main-laget-wrapper{
+        grid-area: ml;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.laget_variable{
+    margin-left: 82px;
+    margin-right: 82px;
+    margin-top: 64px;
+    display: flex;
+}
+.img_variable{
+    width:128px ;
+    height: auto;
+}
+
+#laget-display-game{
+    height: 270px;
+    width: 470px;
+}
+#laget-display-bild-variable{
+    display: flex;
+    justify-content: center;
+}
+#lag1{
+    grid-area: p1;
+
+}
+#lag2{
+    grid-area: p2;
+    
+}
+#lag3{
+    grid-area: p3;
+
+}
+#lag4{
+    grid-area: p4;
+
+}
+#lag5{
+    grid-area: p5;
+
+}
+
+
+#future-event-gridwrapper{
+    display: grid;
+    height: 200vh;
+    width: 100vw;
+    grid-template-rows: 64px 1fr;
+    grid-template-columns:6fr 1fr  ;
+    grid-template-areas:
+
+    "he na"
+    "ma ma"
+
+    
+    
+    ;
+}
+#future-events-wrapper{
+    display: flex;
+    flex-direction: column;
+}
+
+.future-event-variable{
+    display: flex;
+    justify-content: center;
 }
