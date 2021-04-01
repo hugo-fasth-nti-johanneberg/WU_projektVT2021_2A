@@ -1,0 +1,3 @@
+Primary color rgba(202,84,132,255)
+Secondary color rgba(5,220,252,255)
+White color rgba(251,254,254,255)
