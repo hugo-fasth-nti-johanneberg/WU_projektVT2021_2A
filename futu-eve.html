@@ -11,36 +11,47 @@
 <body>
     
     <div id="future-event-gridwrapper">
-    <header id="global_header">
-        <img src="misc/NTIE_logo.jpg" alt="logotypen" id="NTIE_logo">
 
-    </header>
-    <nav class="nav-direction">
-
-        <ul class="navigation-links">
-            <li class="list-element"><a href="futu-eve.html">Framtida Evenemang</a></li>
-            <li class="list-element"><a href="laget.html">Möt Laget</a></li>
-            <li class="list-element"><a href="application.html">Applikationer</a></li>
-            <li class="list-element"><a href="about-us.html">Om våran verksamhet </a></li>
-        </ul>
-
-        <div class="burger">
-            <div class="box-1">BURGAR</div><!-- to do. make burger design -->
+        <div class="navigationlinks">
+            <div class="menu-items">
+            <ul>
+                <li><a href="futu-eve.html">Framtida Evenemang</a></li>
+                <li><a href="laget.html">Möt Laget</a></li>
+                <li><a href="application.html">Applikationer</a></li>
+                <li><a href="about-us.html">Om våran verksamhet </a></li>
+            </ul>
+            </div>
         </div>
 
+
+    <header id="global_header">
         
+        <a href="index.html"><img src="misc/NTIE_logo.jpg" alt="logotypen" id="NTIE_logo"></a>
+    </header>
+    <nav>
+
+        <div class="menu-btn">
+            <div class="menu-btn_burger"></div>
+        </div>
+
     </nav>
 
     <main id="future-events-wrapper" > 
-        <a href="https://www.stockholmlive.com/events/detail/csgo-major" class="future-event-variable">Majorlänk</a>
-        <a href="https://www.stockholmlive.com/events/detail/csgo-major" class="future-event-variable"><img src="####" alt="image of major"></a>
+        
+        <div id="future-event-text">
+        <h3>Välkomen till framtida events.</h3>
+        <h5>Här kan ni se villka tävlingar <br>
+             vi kommer vara med i. <br> Klicka på länken och boka platser!</h5>
+        </div>
+        <a href="https://www.stockholmlive.com/events/detail/csgo-major" class="future-event-variable"><h2>Major</h2></a>
+        <a href="https://www.stockholmlive.com/events/detail/csgo-major" class="future-event-variable"><img src="misc/facit-major.jpg" alt="image of major" id="major-image"></a>
 
-        <a href="https://pro.eslgaming.com/csgo/proleague/" class="future-event-variable">The Finals</a>
-        <a href="https://pro.eslgaming.com/csgo/proleague/" class="future-event-variable"><img src="##" alt="imgfinals"></a>
+        <a href="https://pro.eslgaming.com/csgo/proleague/" class="future-event-variable"><h2>ESL</h2></a>
+        <a href="https://pro.eslgaming.com/csgo/proleague/" class="future-event-variable"><img src="misc/es.jpg" alt="imgfinals" id="esl-image"></a>
     </main>
 
     </div>
-    <script> src="js/script.js"</script>
+    <script src="/js/script.js"></script>
 
 </body>
 </html>
